@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+    --font-body: 'Karla', system-ui, -apple-system, sans-serif;
+    --font-mono: 'DM Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+    /* Textile palette, taken from the pangtse pattern in the brief. */
+    --paper: #fbf7e4;
+    --parchment: #f3ecd2;
+    --ink: #1e1a16;
+    --crimson: #e13b32;
+    --saffron: #f4a62a;
+    --olive: #8c9c3c;
+    --jade: #5fae96;
+    --clay: #9c6437;
+  }
+
+  * {
+    border-color: rgb(30 26 22 / 0.12);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-feature-settings: 'kern', 'liga';
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  /* Fraunces is variable: dial in a soft, slightly wonky optical serif. */
+  .font-display {
+    font-variation-settings: 'SOFT' 30, 'WONK' 1, 'opsz' 40;
+  }
+
+  ::selection {
+    background-color: var(--saffron);
+    color: var(--ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--crimson);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* Keep the paper tone in the browser chrome / overscroll area. */
+  html,
+  body {
+    background-color: var(--paper);
+  }
+}
+
+@layer components {
+  /* Small tracked-out caps used for every structural label on the site. */
+  .label {
+    @apply font-mono text-2xs uppercase tracking-label text-clay;
+  }
+
+  .rule {
+    @apply h-px w-full bg-ink/10;
+  }
+
+  /*
+   * Signature element: a woven selvedge derived from the textile's diamond
+   * lattice. Drawn in CSS gradients so it scales, themes and costs nothing.
+   */
+  .selvedge {
+    height: 7px;
+    background-color: var(--parchment);
+    background-image:
+      linear-gradient(135deg, var(--crimson) 25%, transparent 25%),
+      linear-gradient(225deg, var(--crimson) 25%, transparent 25%),
+      linear-gradient(135deg, var(--saffron) 25%, transparent 25%),
+      linear-gradient(225deg, var(--saffron) 25%, transparent 25%);
+    /* Crimson on the tile, saffron offset by half — an alternating lattice. */
+    background-position:
+      0 0,
+      0 0,
+      7px 0,
+      7px 0;
+    background-size: 14px 14px;
+    background-repeat: repeat-x;
+  }
+
+  .selvedge-thick {
+    height: 13px;
+    background-size: 26px 26px;
+    background-position:
+      0 0,
+      0 0,
+      13px 0,
+      13px 0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Fluid gutters that hold up from 320px to ultrawide. */
+  .shell {
+    @apply mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-12;
+  }
+
+  .shell-narrow {
+    @apply mx-auto w-full max-w-[900px] px-5 sm:px-8 lg:px-12;
+  }
+}
+
+/* Honour the system reduced-motion preference everywhere. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+  }
+}
