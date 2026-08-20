@@ -1,7 +1,7 @@
 # The Chefs of Bhutan
 
 A chef profile directory built with Next.js 15 (App Router), React 19, TypeScript
-and Tailwind CSS. Eleven chefs, each with a full profile page generated from
+and Tailwind CSS. Thirteen chefs, each with a full profile page generated from
 their own CV, plus a searchable and filterable directory.
 
 Frontend only — no database, no API, no environment variables. Every page is
@@ -201,8 +201,8 @@ for that reason, and has not been verified against a live build.
 
 - `npm run build` — clean, zero errors, zero warnings
 - `tsc --noEmit` — clean under `strict`
-- 19 routes prerendered as static HTML
-- All 11 profile pages, 11 portraits and 11 CV PDFs return 200; unknown slugs 404
+- 21 routes prerendered as static HTML
+- All 13 profile pages, 13 portraits and 13 CV PDFs return 200; unknown slugs 404
 - No horizontal overflow at 320, 360, 390, 768, 1024, 1280 or 1600px
 - One `<h1>` per page, no heading-level jumps, all images have `alt`
 - Every link and button has an accessible name

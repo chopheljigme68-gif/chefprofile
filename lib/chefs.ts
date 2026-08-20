@@ -1,7 +1,7 @@
 import type { Chef, Level } from './types';
 
 /**
- * Transcribed from the eleven CVs supplied by the chefs themselves.
+ * Transcribed from the thirteen CVs supplied by the chefs themselves.
  *
  * Deliberately omitted from this public directory: citizenship ID numbers,
  * dates of birth, driving licence numbers, height/weight, parents' names and
@@ -263,6 +263,211 @@ export const chefs: Chef[] = [
       { name: 'Damema Rika Dorji', role: 'General Manager, Paro Grand Resort' },
       { name: 'Jigme Losel', role: 'Operations Manager, Paro Grand Resort' },
     ],
+  },
+
+  {
+    slug: 'milan-rai',
+    name: 'Milan Rai',
+    title: 'Sous Chef',
+    region: 'Thimphu',
+    location: 'Thimphu, Bhutan',
+    level: 'Chef',
+    years: 11,
+    photo: '/chefs/milan-rai.jpg',
+    photoAlt: 'Milan Rai in chef whites',
+    cv: '/cv/milan-rai.pdf',
+    summary:
+      'Sous Chef with eleven years at Amankora in Thimphu, through to the close of 2025, working across both the pastry section and the hot kitchen. Trained at the Royal Institute of Tourism and Hospitality, with advanced international baking technique and a steady hand supervising a brigade under pressure.',
+    specialities: [
+      'International baking and pastry',
+      'Hot kitchen supervision',
+      'Menu planning and recipe development',
+    ],
+    accolades: [
+      'Sous Chef at Amankora, Thimphu (2014–2025)',
+      'Eleven years with Aman Resorts',
+      'Diploma in Tourism and Hotel Management, Royal Institute of Tourism and Hospitality',
+    ],
+    contact: { email: 'mr9260443@gmail.com', phone: '+975 17448587' },
+    experience: [
+      {
+        role: 'Sous Chef',
+        org: 'Amankora',
+        location: 'Thimphu',
+        period: 'October 2014 – December 2025',
+        points: [
+          'Assisted the head pastry chef and supervised the pastry team.',
+          'Assisted the head kitchen chef in the main kitchen and supervised the hot kitchen team.',
+          'Held quality control across both sections.',
+          'Managed inventory and stock.',
+          'Developed menus and maintained kitchen equipment.',
+          'Kept the kitchen to cleanliness and food safety standards.',
+        ],
+      },
+    ],
+    education: [
+      {
+        qualification: 'Diploma in Tourism and Hotel Management',
+        institution: 'Royal Institute of Tourism and Hospitality, Thimphu',
+        period: '2012–2014',
+      },
+      {
+        qualification: 'Class XII (Commerce)',
+        institution: 'Tenzin Higher Secondary School, Paro',
+        period: '2009–2011',
+      },
+      {
+        qualification: 'Class X',
+        institution: 'Shaba Middle Secondary School, Paro',
+        period: '1998–2008',
+      },
+    ],
+    skills: [
+      'Advanced international baking technique',
+      'Menu planning and recipe development',
+      'Food safety standards and sanitation',
+      'Kitchen operations management',
+      'Staff supervision',
+      'Efficient service in fast-paced environments',
+      'Team leadership and communication',
+      'Working quickly and accurately under pressure',
+    ],
+  },
+
+  {
+    slug: 'sonam-gyeltshen',
+    name: 'Sonam Gyeltshen',
+    title: 'Commercial Cookery Trainer',
+    region: 'Thimphu',
+    location: 'Thimphu, Bhutan',
+    level: 'Chef',
+    years: 8,
+    photo: '/chefs/sonam-gyeltshen.jpg',
+    photoAlt: 'Sonam Gyeltshen in a checked gho',
+    cv: '/cv/sonam-gyeltshen.pdf',
+    summary:
+      'Commercial Cookery Trainer at the Bhutan Institute of Tourism and Hospitality, with more than eight years spanning five-star kitchens and the classroom. Came up through dusitD2 Yarkey and The Dragon Boutique, and now designs the training that brings the next intake of Bhutanese cooks through.',
+    specialities: [
+      'Culinary training and curriculum design',
+      'Seasonal menu development',
+      'Italian and Thai cuisine',
+    ],
+    accolades: [
+      'Commercial Cookery Trainer, Bhutan Institute of Tourism and Hospitality',
+      'Certificate of Competency, 14th National Skills Competition (2017)',
+      'Mentor at the 10th and 11th Young Chef Olympiad',
+      'Certified TVET Assessor and Accreditor, TVET Quality Council',
+    ],
+    contact: { email: 'sogyel14@gmail.com', phone: '+975 17541351' },
+    experience: [
+      {
+        role: 'Commercial Cookery Trainer',
+        org: 'Bhutan Institute of Tourism and Hospitality',
+        location: 'Thimphu',
+        period: 'March 2023 – present',
+        points: [
+          'Designs and delivers commercial cookery training covering both practical skill and underlying theory.',
+          'Led a two-month training initiative at Zhemgang RDTC, which drew strong feedback on programme effectiveness.',
+          'Contributes to curriculum review and serves as a food production assessor for ND II examinations.',
+        ],
+      },
+      {
+        role: 'Sous Chef',
+        org: 'The Dragon Boutique',
+        location: 'Thimphu',
+        period: 'March 2021 – May 2023',
+        points: [
+          'Oversaw kitchen operations at a three-star property, tightening efficiency through menu planning and quality control.',
+          'Trained kitchen staff in food preparation technique.',
+          'Developed seasonal menus that lifted repeat custom and guest reviews.',
+          'Introduced inventory practices that cut waste and improved margin.',
+        ],
+      },
+      {
+        role: 'Demi Chef de Partie',
+        org: 'dusitD2 Yarkey',
+        location: 'Thimphu',
+        period: 'December 2018 – February 2021',
+        points: [
+          'Prepared dishes across several cuisines, including Italian and Thai, in a fast-paced five-star kitchen.',
+          'Managed the pizza section and supervised food service operations.',
+          'Completed leadership training alongside the role.',
+        ],
+      },
+      {
+        role: 'Culinary Intern',
+        org: 'Amankora',
+        location: 'Bumthang',
+        period: '3 months',
+        points: [
+          'Three-month internship building core culinary skills and an understanding of high-end resort operations.',
+        ],
+      },
+      {
+        role: 'Casual Kitchen Support',
+        org: 'Le Méridien · Royal state visit catering',
+        location: 'Thimphu',
+        period: '2016',
+        points: [
+          'Supported luxury hotel dining service at Le Méridien.',
+          'Volunteered as a kitchen helper during the official visit of the President of Bangladesh.',
+        ],
+      },
+    ],
+    education: [
+      {
+        qualification: 'Diploma in Tourism and Hospitality (Hotel Management)',
+        institution: 'Bhutan Institute of Tourism and Hospitality, Thimphu',
+        period: '2018',
+      },
+      {
+        qualification: 'National Diploma Level 2 in Hotel Supervisor (ND2)',
+        institution: 'Bhutan Institute of Tourism and Hospitality',
+        period: 'July 2018',
+      },
+      {
+        qualification: 'Class XII',
+        institution: 'Nima High School, Thimphu',
+        period: '2015',
+      },
+    ],
+    training: [
+      {
+        qualification: 'Firefighting and First Aid',
+        institution: 'dusitD2 Yarkey',
+      },
+      {
+        qualification: 'Leadership, Empowerment and Food Handling',
+        institution: 'Competency training',
+      },
+      {
+        qualification: 'CRAFT — Culinary Resource and Food Training',
+        institution: 'Workshop, with team-building',
+      },
+      {
+        qualification: 'Disability Inclusion in Employment',
+        institution: 'Competency training',
+      },
+    ],
+    certificates: [
+      'Certificate of Competency, 14th National Skills Competition (2017)',
+      'Mentorship certificate, 10th Young Chef Olympiad',
+      'Mentorship certificate, 11th Young Chef Olympiad',
+      'TVET Assessor and Accreditor competency, TVET Quality Council',
+      'Food Handlers Licence, Bhutan Agriculture & Food Regulatory Authority (valid to May 2029)',
+    ],
+    skills: [
+      'Culinary technique across diverse cuisines',
+      'Training programme design and delivery',
+      'Mentoring culinary students',
+      'Seasonal and culturally relevant menu development',
+      'Kitchen team leadership',
+      'Food production assessment',
+      'Guest relations and complaint resolution',
+      'Problem solving under operational pressure',
+      'Food safety and handling',
+    ],
+    languages: ['Dzongkha', 'English', 'Thai'],
   },
 
   {

@@ -17,7 +17,7 @@ export default function SiteFooter() {
             </span>
           </div>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-graphite">
-            Eleven chefs, from the kitchens of Thimphu, Paro, Trongsa and
+            Thirteen chefs, from the kitchens of Thimphu, Paro, Trongsa and
             Gelephu. Every profile here is drawn from the chef&rsquo;s own CV.
           </p>
         </div>
